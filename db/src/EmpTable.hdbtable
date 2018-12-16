@@ -1,0 +1,11 @@
+table.tableType = COLUMNSTORE;
+
+
+table.columns = [
+{name = "EMP_ID";   sqlType = INTEGER; nullable = false;},
+{name = "EMP_NAME"; sqlType = VARCHAR; nullable = false;},
+{name = "EMP_DEPT"; sqlType = NVARCHAR; nullable = true; length = 10; defaultValue = "SAP-ABAP";},
+{name = "EMP_SAL";  sqlType = DECIMAL; nullable = false; precision = 12; scale = 3;}
+                ];
+
+table.primaryKey.pkcolumns = ["EMP_ID"];
